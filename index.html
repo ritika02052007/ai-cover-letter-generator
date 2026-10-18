@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Cover Letter Generator</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>✉️ AI Cover Letter Generator</h1>
+      <p class="sub">Fill the details, optionally upload your resume, and get a tailored cover letter.</p>
+    </header>
+
+    <section class="card">
+      <form id="letter-form" novalidate>
+        <div class="grid">
+          <label>Candidate Name
+            <input type="text" id="name" name="name" placeholder="e.g. Aarav Sharma" required />
+          </label>
+          <label>Job Role
+            <input type="text" id="role" name="role" placeholder="e.g. Frontend Developer" required />
+          </label>
+          <label>Target Company
+            <input type="text" id="company" name="company" placeholder="e.g. Google" required />
+          </label>
+        </div>
+
+        <label>Key Skills
+          <textarea id="skills" name="skills" rows="3" placeholder="e.g. JavaScript, React, REST APIs, Git" required></textarea>
+        </label>
+
+        <label>Job Description <span class="muted">(optional)</span>
+          <textarea id="jd" name="jd" rows="4" placeholder="Paste the job description here for a better match"></textarea>
+        </label>
+
+        <div id="dropzone" class="dropzone" tabindex="0">
+          <input type="file" id="resume" accept="application/pdf" hidden />
+          <p id="drop-text">📄 Upload Resume (PDF) — click or drag &amp; drop</p>
+        </div>
+
+        <p id="error" class="error" role="alert" hidden></p>
+
+        <div class="actions">
+          <button type="submit" id="btn-ai" class="primary">Generate with AI</button>
+          <button type="button" id="btn-template" class="secondary">Quick Template (No AI)</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card" id="output-card" hidden>
+      <div class="output-head">
+        <h2>Your Cover Letter</h2>
+        <button id="btn-copy" class="secondary">Copy to Clipboard</button>
+      </div>
+      <div id="loading" class="loading" hidden>
+        <span class="spinner"></span> Generating...
+      </div>
+      <div id="output" class="output"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
