@@ -33,7 +33,7 @@ const dropzone = $("dropzone");
 const resumeInput = $("resume");
 const dropText = $("drop-text");
 
-// ---------- Phase 1: state capture ----------
+// ----------  state capture ----------
 fields.forEach((f) => {
   $(f).addEventListener("input", (e) => {
     state[f] = e.target.value.trim();
@@ -50,7 +50,7 @@ function validate() {
   return true;
 }
 
-// ---------- Phase 1: simulated controller (hardcoded template) ----------
+// ----------  simulated controller (hardcoded template) ----------
 function generateFromTemplate({ name, role, company, skills }) {
   return `Dear Hiring Manager at ${company},
 
@@ -64,7 +64,7 @@ Sincerely,
 ${name}`;
 }
 
-// ---------- Phase 2: prompt engineering + Gemini call ----------
+// ----------  prompt engineering + Gemini call ----------
 function buildPrompt(s) {
   const system = [
     "You are an expert career coach and professional cover letter writer.",
