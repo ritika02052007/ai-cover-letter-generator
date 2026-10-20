@@ -46,6 +46,4 @@ npm run dev
     └── style.css
 ```
 
-## Security
 
-`.env` is gitignored. `VITE_` variables are bundled into the browser build, so for production, proxy API calls through a backend.
