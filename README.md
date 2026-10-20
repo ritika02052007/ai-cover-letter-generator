@@ -4,20 +4,20 @@ A SaaS-style utility built with Vite and vanilla JavaScript. The user enters the
 
 ## Features
 
-### Phase 1: Base MVP
+### Base MVP
 - Form: Candidate Name, Job Role, Target Company, Key Skills (plus optional Job Description)
 - Single `state` object updated on every input event
 - Inline validation listing missing required fields
 - `generateFromTemplate(state)` for a no-API hardcoded letter ("Quick Template (No AI)")
 - Output card with a working "Copy to Clipboard" button (with fallback)
 
-### Phase 2: LLM Integration and Security
+###  LLM Integration and Security
 - Google Gemini API (`gemini-2.5-flash`) via `fetch`
 - `buildPrompt(state)` injects form data into a system prompt + user message
 - API key read only from `import.meta.env.VITE_GEMINI_API_KEY`
 - "Generating..." state with spinner, disabled buttons, and full error handling
 
-### Phase 3: SaaS-Level Features
+### SaaS-Level Features
 - "Upload Resume" dropzone (click, drag-and-drop, keyboard accessible, PDF only)
 - Text extraction with `pdfjs-dist`
 - Resume text (first 8000 characters) appended to the LLM payload
