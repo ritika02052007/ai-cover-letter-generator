@@ -313,11 +313,7 @@ Computer Science Engineering Student | Aspiring Full Stack Developer
 
 ---
 
-## ⭐ Support
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
-
-Your support and feedback are always appreciated!
 
 ---
 
