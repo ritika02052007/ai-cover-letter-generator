@@ -5,7 +5,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
 // ---------- Config (key comes from .env, never hardcode it) ----------
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const MODEL = "gemini-2.5-flash";
+const MODEL = "gemini-3.8-flash";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`;
 
 // ---------- State ----------
