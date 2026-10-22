@@ -309,7 +309,7 @@ If you have an idea to improve this project:
 Computer Science Engineering Student | Aspiring Full Stack Developer
 
 - 💻 GitHub: [ritika02052007](https://github.com/ritika02052007)
-- 🌐 Portfolio: [Visit My Portfolio](https://ritika02052007.github.io/Portfolio_website/)
+
 
 ---
 
