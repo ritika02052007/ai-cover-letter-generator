@@ -311,11 +311,7 @@ Computer Science Engineering Student | Aspiring Full Stack Developer
 - 💻 GitHub: [ritika02052007](https://github.com/ritika02052007)
 
 
----
 
-
-
----
 
 <p align="center">
   <b>Built with ❤️ to make job applications easier and smarter.</b>
